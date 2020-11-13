@@ -1,0 +1,13 @@
+<%- include('../includes/head') %>
+</head>
+<body>
+    <h1>Home</h1>
+
+    <% if (loggedIn) { %>
+        <h3>You're all set</h3>
+    <% } else { %>
+        <h3>Please log in</h3>
+        <a href="http://localhost:3333/login">click here to log in</a>
+    <% } %>
+</body>
+<%- include('../includes/end') %>
